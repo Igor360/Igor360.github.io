@@ -4,7 +4,9 @@
 .navbar .navbar-brand{
     box-shadow: 0x 0x 10px black;
 }
-
+body{
+	font-family: 'Dosis', sans-serif;
+}
 #home {
     background-image: url('../img/site.png');
 	background-color: #222;
@@ -350,4 +352,19 @@ textarea.form-control {
 .skills .row{
 	padding-bottom: 0.6em;
 	border-bottom: 2px dotted gray;
+}
+
+.scroll-up {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    bottom: 2em;
+	right: 2em;
+	padding: 1em;
+	padding-top: -1em !important;
+	border: 1px solid #428bca;
+	border-radius: 200px;
+
+
+	
 }
