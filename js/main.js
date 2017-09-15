@@ -73,3 +73,22 @@
             }
         
         });
+
+
+$('#buttonForm').click(function(){
+    console.log(document.getElementById('name').value);
+    $.ajax({
+        url : "php/sendEmail.php",
+        dataType : "json",
+        type : "post",
+        data : {
+            name : document.getElementById('name').value,
+            mail : document.getElementById('email').value,
+            text : document.getElementById('text').value
+        },
+        success : function(result){
+            alert(result);
+        }
+    });
+    
+});
