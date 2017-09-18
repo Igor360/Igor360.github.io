@@ -66,10 +66,7 @@
                 $("#also").addClass("animated fadeInLeft");
             if ($(this).scrollTop() >= $("#also").offset().top){
                 $("#contactMessage").addClass("animated slideInDown");
-                $("#nameForm").addClass('animated slideInUp');
-                $("#emailForm").addClass('animated slideInUp');
-                $("#textForm").addClass('animated slideInUp');
-                $("#buttonForm").addClass('animated slideInUp');
+                $("#contacts").addClass('animated slideInUp');
             }
         
         });
