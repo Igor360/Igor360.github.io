@@ -70,14 +70,13 @@ body{
 	position: absolute;
 	left: 50%;
 	bottom: 40px;
-	border: 2px solid #fff;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
 	margin-left: -15px;
 	display: block;
 	z-index: 10;
-    text-align: center;	
+    text-align: center;
 }
 
 .scroll-down span{
@@ -120,7 +119,7 @@ body{
 }
 
 .navbar-custom {
-	
+
 	border: 0;
 	border-radius: 0;
 	margin: 0;
@@ -366,8 +365,8 @@ textarea.form-control {
 	right: 2em;
 	padding: 1em;
 	padding-top: -1em !important;
-	border: 1px solid #428bca;
-	border-radius: 200px;	
+	border: 1px solid #4e4e4e4c;
+	border-radius: 200px;
 }
 .image-contact img{
 	border-radius: 200px;
@@ -385,7 +384,7 @@ textarea.form-control {
 }
 .contacts .iconbox-text {
 	font-size: 14pt;
-	font-family: 'Indie Flower', cursive;	
+	font-family: 'Indie Flower', cursive;
 }
 
 
@@ -412,3 +411,38 @@ textarea.form-control {
 	top: 50%;
 	width: 200px;
 }
+
+ a {
+	 color: #4e4e4e;
+ }
+
+ .contact-me a {
+	 width: 36px;
+	 height: 36px;
+	 display: block;
+	 line-height: 35px;
+	 text-align: center;
+	 border: 1px solid rgb(34 34 34);
+	 -webkit-border-radius: 3px;
+	 -moz-border-radius: 3px;
+	 border-radius: 3px;
+	 font-size: 14px;
+	 color: rgb(34 34 34);
+ }
+ .contact-me a:hover {
+	 width: 36px;
+	 height: 36px;
+	 display: block;
+	 line-height: 35px;
+	 text-align: center;
+	 border: 2px solid rgb(34 34 34);
+	 -webkit-border-radius: 3px;
+	 -moz-border-radius: 3px;
+	 border-radius: 3px;
+	 font-size: 14px;
+	 color: rgb(34 34 34);
+ }
+
+ .contact-me{
+	margin: unset	;
+ }

@@ -1,6 +1,6 @@
- 
+
         // select screen size
-        
+
 		$(".screen-height").height($(window).height());
 
 		$(window).resize(function(){
@@ -13,8 +13,8 @@
 			$('#home').parallax('50%', 0.1);
 		}
 
-		
-		
+
+
 		$('.header').sticky({
 			topSpacing: 0
 		});
@@ -31,9 +31,9 @@
 				$('.scroll-up').fadeOut();
 			}
 		});
-        
+
         	$('a[href*=#]').bind("click", function(e){
-           
+
 			var anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $(anchor.attr('href')).offset().top
@@ -41,13 +41,13 @@
 			e.preventDefault();
 		});
 
-            
-        // havbar 
-            
+
+        // havbar
+
         $(document).scroll(function(){
             var homePageHeight = $('.screen-height').height();
 
-            
+
             if ($(this).scrollTop() > homePageHeight)
             {
                 $(".navbar").addClass('navbar-fixed-top');
@@ -55,20 +55,22 @@
                 $('#webDesign').addClass('animated bounceInLeft');
                 $('#webPrograming').addClass(' animated bounceInRight');
                 $('#mySkills').addClass('animated slideInDown');
+                $('#blockchains').addClass(' animated bounceInRight');
+                $('#smartContracts').addClass('animated bounceInLeft');
             }
-            else 
+            else
                 $(".navbar").removeClass('navbar-fixed-top');
-            if ($(this).scrollTop() > $("#whatIdoText").offset().top)                
+            if ($(this).scrollTop() > $("#whatIdoText").offset().top)
                 $("#languages").addClass("animated fadeInLeft");
-            if ($(this).scrollTop() > $("#webDesign").offset().top)                
+            if ($(this).scrollTop() > $("#webDesign").offset().top)
                 $("#frameworks").addClass("animated fadeInRight");
-            if ($(this).scrollTop() >= $("#mySkills").offset().top)                
+            if ($(this).scrollTop() >= $("#mySkills").offset().top)
                 $("#also").addClass("animated fadeInLeft");
             if ($(this).scrollTop() >= $("#also").offset().top){
                 $("#contactMessage").addClass("animated slideInDown");
                 $("#contacts").addClass('animated slideInUp');
             }
-        
+
         });
 
 
@@ -87,7 +89,7 @@ $('#buttonForm').click(function(){
             alert(result);
         }
     });
-    
+
 });
 
 
